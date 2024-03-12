@@ -2,11 +2,11 @@
 This project is a hacker news client using their official api defined here: https://github.com/HackerNews/API
 
 ### Why this project?
-This is a project that we had asked to our onsite interviews to our candidates and collaborated with them to solve while working at Mirror.
+This is a project that we had asked in our onsite interviews to our candidates and collaborated with them to solve while working at Mirror.
 
 I am intentionally not using the optimized Firebase mobile clients for this project to showcase how I am overcoming the challenges while building this app. The API itself is extremely fast however requiring the client to make many api calls and maintain the app state internally.
 
-If you are using charles or any network sniffer, you'd be seeing 10s of api calls are being made when you are opening a screen. Again, that's intentional.
+If you are using charles or any network sniffer, you'd be seeing tens of api calls are being made when you are opening a screen. Again, that's intentional.
 
 ### Architecture
 
@@ -19,7 +19,7 @@ The project also uses Combine under the hood for the UI but for the rest of the 
 ### Improvements
 
 **Functional**
-- Leverage AsyncStreams or Combine to stream the comments from the detail page instead of waiting comments to be fetched partially requested by the user.
+- Leverage AsyncStreams or Combine to stream the comments in the Story detail page from the `ItemRepository` instead of waiting all comments to be fetched partially requested by the user.
 - Implement infinite scrolling instead of on-demand pagination.
 - Implement pull to refresh 
 - In-Memory cache needs to be invalidated when needed.
@@ -32,4 +32,7 @@ The project also uses Combine under the hood for the UI but for the rest of the 
 
 **Testing**
 - While the code is written testability in mind, there are currently no tests.
+
+### How to run?
+Make sure to use XCode 15.3 and open `HackerNews.xcodeproj`. Deployment target is currently set to 17.4 but the project should be able to run for 17.0+.
 
