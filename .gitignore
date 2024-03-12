@@ -1,0 +1,6 @@
+.DS_Store
+DerivedData
+xcuserdata/
+*/swiftpm/Package.resolved
+*.ipa
+*.zip
