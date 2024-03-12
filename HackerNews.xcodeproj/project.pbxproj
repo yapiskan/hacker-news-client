@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		250E55442BA0026D000749CC /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 250E55432BA0026D000749CC /* Networking */; };
+		250E55472BA00497000749CC /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 250E55462BA00497000749CC /* Networking */; };
 		2536E4822B9FD62700009A02 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2536E4812B9FD62700009A02 /* items.json */; };
 		2536E4852B9FE27900009A02 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536E4842B9FE27900009A02 /* HTMLTextView.swift */; };
 		2536E4872B9FE30500009A02 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536E4862B9FE30500009A02 /* WebView.swift */; };
@@ -101,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250E55472BA00497000749CC /* Networking in Frameworks */,
 				250E55442BA0026D000749CC /* Networking in Frameworks */,
 				255DFFA32B9D30C9004AF551 /* Networking in Frameworks */,
 			);
@@ -358,6 +360,7 @@
 			packageProductDependencies = (
 				255DFFA22B9D30C9004AF551 /* Networking */,
 				250E55432BA0026D000749CC /* Networking */,
+				250E55462BA00497000749CC /* Networking */,
 			);
 			productName = HackerNews;
 			productReference = 255DFF732B9D2FD2004AF551 /* HackerNews.app */;
@@ -432,6 +435,7 @@
 			);
 			mainGroup = 255DFF6A2B9D2FD2004AF551;
 			packageReferences = (
+				250E55452BA00497000749CC /* XCLocalSwiftPackageReference "Packages/Networking" */,
 			);
 			productRefGroup = 255DFF742B9D2FD2004AF551 /* Products */;
 			projectDirPath = "";
@@ -831,8 +835,19 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		250E55452BA00497000749CC /* XCLocalSwiftPackageReference "Packages/Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Networking;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		250E55432BA0026D000749CC /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		250E55462BA00497000749CC /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
 		};
