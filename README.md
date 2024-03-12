@@ -21,11 +21,12 @@ The project also uses Combine under the hood for the UI but for the rest of the 
 **Functional**
 - Leverage AsyncStreams or Combine to stream the comments from the detail page instead of waiting comments to be fetched partially requested by the user.
 - Implement infinite scrolling instead of on-demand pagination.
+- Implement pull to refresh 
 - In-Memory cache needs to be invalidated when needed.
 - Optimize HTMLText view so that it doesn't throw warnings.
 - Error handling is not properly done in this project.
 
-**Architectural **
+**Architectural**
 - Use a proper DI package such as Swinject or needle.
 - Extract the high level pagination logic from view models.
 
