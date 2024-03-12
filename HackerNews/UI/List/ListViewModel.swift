@@ -16,8 +16,8 @@ class ListViewModel {
     private(set) var stories: [Story] = []
     private(set) var isLoading: Bool = false
     private(set) var hasMore: Bool = true
-
     var selectedItem: Story? = nil
+
     private var offset = 0
     private let limit = 20
 

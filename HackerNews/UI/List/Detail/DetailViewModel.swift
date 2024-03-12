@@ -17,6 +17,7 @@ class DetailViewModel {
     private(set) var comments = [Comment]()
     private(set) var isLoading = false
     private(set) var hasMore = true
+    
     private var offset = 0
     private let limit = 10
 
