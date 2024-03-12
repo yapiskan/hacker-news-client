@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250E55442BA0026D000749CC /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 250E55432BA0026D000749CC /* Networking */; };
 		2536E4822B9FD62700009A02 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2536E4812B9FD62700009A02 /* items.json */; };
 		2536E4852B9FE27900009A02 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536E4842B9FE27900009A02 /* HTMLTextView.swift */; };
 		2536E4872B9FE30500009A02 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536E4862B9FE30500009A02 /* WebView.swift */; };
@@ -79,7 +80,6 @@
 		255DFF8D2B9D2FD4004AF551 /* HackerNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255DFF912B9D2FD4004AF551 /* HackerNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsUITests.swift; sourceTree = "<group>"; };
 		255DFF932B9D2FD4004AF551 /* HackerNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		255DFFA02B9D3094004AF551 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = Packages/Networking; sourceTree = "<group>"; };
 		255DFFA52B9D35B0004AF551 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		255DFFA92B9D36D9004AF551 /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
 		255DFFAB2B9D3710004AF551 /* StoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryService.swift; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250E55442BA0026D000749CC /* Networking in Frameworks */,
 				255DFFA32B9D30C9004AF551 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +205,6 @@
 		255DFF6A2B9D2FD2004AF551 = {
 			isa = PBXGroup;
 			children = (
-				255DFFA02B9D3094004AF551 /* Networking */,
 				255DFF752B9D2FD2004AF551 /* HackerNews */,
 				255DFF862B9D2FD4004AF551 /* HackerNewsTests */,
 				255DFF902B9D2FD4004AF551 /* HackerNewsUITests */,
@@ -357,6 +357,7 @@
 			name = HackerNews;
 			packageProductDependencies = (
 				255DFFA22B9D30C9004AF551 /* Networking */,
+				250E55432BA0026D000749CC /* Networking */,
 			);
 			productName = HackerNews;
 			productReference = 255DFF732B9D2FD2004AF551 /* HackerNews.app */;
@@ -430,6 +431,9 @@
 				Base,
 			);
 			mainGroup = 255DFF6A2B9D2FD2004AF551;
+			packageReferences = (
+				250E55422BA0026D000749CC /* XCLocalSwiftPackageReference "Packages/Networking" */,
+			);
 			productRefGroup = 255DFF742B9D2FD2004AF551 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -828,7 +832,18 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		250E55422BA0026D000749CC /* XCLocalSwiftPackageReference "Packages/Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Networking;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		250E55432BA0026D000749CC /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
 		255DFFA22B9D30C9004AF551 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
