@@ -49,6 +49,12 @@ struct DetailView: View {
             Text("\(comment.author) - \(comment.timeAgo)")
                 .font(.caption.bold())
             HTMLText(html: comment.text)
+            // TODO: The HTMLText view above causing the warning belowl
+            // === AttributeGraph: cycle detected through attribute 611024 ===
+            // the NSAttributedString inside the HTMLText is causing that issue.
+            // To prevent that you can use enable the code below however that would
+            // cause the text not to be respecitng html styling and unicodes.
+            // Text(comment.text)
                 .font(.caption)
         }
         .padding(.leading, 8 * CGFloat(comment.level + 1))

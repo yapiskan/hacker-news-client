@@ -26,7 +26,6 @@ class CommentRepository: CommentRepositing {
     func prepareComments(forItem item: Endpoints.Response.Item, offset: Int, limit: Int) async throws {
         guard let kids = item.kids else { return }
         let fetchingKids = kids[offset..<min(offset + limit, kids.count)]
-        print("fetching kids: \(fetchingKids)")
         try await prepareComments(kids: Array(fetchingKids))
     }
 
